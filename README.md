@@ -1,4 +1,4 @@
-# EVE Healthcare — SDE Intern Backend Assignment
+# EVE Healthcare - SDE Intern Backend Assignment
 
 A small FastAPI + PostgreSQL backend for diagnostic-test bookings and simulated payments.
 
@@ -121,7 +121,7 @@ Swagger UI is available at `/docs` and ReDoc at `/redoc`.
 ## 6. Run locally with Docker
 
 ```bash
-git clone <your-repository-url>
+git clone  https://github.com/arshinkazi/eve-healthcare-sde-assignment.git
 cd eve-sde-intern-assignment
 
 cp .env.example .env
@@ -301,5 +301,3 @@ The test suite covers:
 ## 12. Assignment alignment
 
 The brief emphasizes engineering thinking over raw feature count and specifically values a smaller, well-designed, tested solution. The implementation therefore prioritizes clear boundaries, database constraints, authorization, transactional state changes, and focused tests rather than adding unnecessary infrastructure.
-
-The submission checklist asks for a README, dependency file, source code, tests, and (when used) Docker configuration; all are included here.

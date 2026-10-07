@@ -53,7 +53,7 @@ A booking stores the price at booking time so later catalogue price changes cann
                 |    PENDING     |
                 +----------------+
                   /            \
-          SUCCESS/              \FAILED
+        SUCCESS  /              \  FAILED
                 v                v
         +-------------+    +-----------+
         |  CONFIRMED  |    |  FAILED   |
@@ -92,25 +92,25 @@ This directly addresses the assignment requirement that repeated webhook events 
 
 ### Diagnostic catalogue
 
-- `POST /centres` — authenticated
+- `POST /centres` - authenticated
 - `GET /centres`
-- `POST /tests` — authenticated
+- `POST /tests` - authenticated
 - `GET /tests`
-- `POST /centres/{centre_id}/tests` — authenticated
+- `POST /centres/{centre_id}/tests` - authenticated
 - `GET /centres/{centre_id}/tests`
 
 ### Bookings
 
-- `POST /bookings` — authenticated
-- `GET /bookings/me` — authenticated
-- `GET /bookings/{booking_id}` — owner only
-- `POST /bookings/{booking_id}/cancel` — owner only
+- `POST /bookings` - authenticated
+- `GET /bookings/me` - authenticated
+- `GET /bookings/{booking_id}` - owner only
+- `POST /bookings/{booking_id}/cancel` - owner only
 
 ### Payments
 
-- `POST /payments/` — authenticated, booking owner only
-- `GET /payments/{payment_id}` — owner only
-- `POST /payments/webhook` — provider endpoint
+- `POST /payments/` - authenticated, booking owner only
+- `GET /payments/{payment_id}` - owner only
+- `POST /payments/webhook` - provider endpoint
 
 ### Health
 
@@ -152,7 +152,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-For the simplest local development/test setup, SQLite is supported through the default configuration. For the assignment deployment, PostgreSQL is the intended database.
+For the simplest local development/test setup, SQLite is supported through the default configuration. 
+For the assignment deployment, PostgreSQL is the intended database.
 
 Then:
 
